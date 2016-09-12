@@ -65,7 +65,7 @@ int main(int argc, char* argv[])
 }
 void processVideo(char* videoFilename) {
     //create the capture object
-    VideoCapture capture(1);
+    VideoCapture capture(videoFilename);
     if(!capture.isOpened()){
         //error in opening the video input
         cerr << "Unable to open video file: " << videoFilename << endl;
@@ -96,7 +96,7 @@ Mat processColors(Mat& fgMaskMOG2)
 	  Mat colVec = fgMaskMOG2.reshape(1, fgMaskMOG2.rows*fgMaskMOG2.cols); // change to a Nx3 column vector as class kmeans works with Nx3 vector
 	  Mat colVecD, bestLabels, centers, clustered;
 	  int attempts = 5;
-	  int K = 16;				//No. of clusters or No. of colors in output
+	  int K = 32;				//No. of clusters or No. of colors in output
 	  double eps = 0.001;
 	  colVec.convertTo(colVecD, CV_32FC3, 1.0/255.0); // convert to floating point (required format for kmeans)
 	  kmeans(colVecD, K, bestLabels, TermCriteria(CV_TERMCRIT_EPS+CV_TERMCRIT_ITER,
