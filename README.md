@@ -7,10 +7,17 @@ The program features 2 important concepts in OpenCV. Background Substration can 
 The program uses BackGroundSubstrator and Kmeans classes to estimate backgroung and generate clusters.
 
 Pseudo Code:
+
 <--Begin
+
 	Load Video
+	
 	Process each frame of video
+	
 		Substract Background of each frame
+		
 		Generate K clusters using Kmeans OpenCV class
+		
 	Display each frame
+	
 End-->
