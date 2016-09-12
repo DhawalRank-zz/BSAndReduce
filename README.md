@@ -8,6 +8,7 @@ The program uses BackGroundSubstrator and Kmeans classes to estimate backgroung 
 
 Pseudo Code:
 
+
 <--Begin
 
 	Load Video
