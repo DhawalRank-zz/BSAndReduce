@@ -12,7 +12,6 @@ Pseudo Code:
 <--Begin
 
 	Load Video
-	
 	Process each frame of video
 		Generate K clusters using Kmeans OpenCV class
 			process 16 bit image
