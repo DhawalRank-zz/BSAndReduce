@@ -14,11 +14,9 @@ Pseudo Code:
 	Load Video
 	
 	Process each frame of video
-	
-		Substract Background of each frame
-		
 		Generate K clusters using Kmeans OpenCV class
-		
+			process 16 bit image
+		Substract Background of each frame
 	Display each frame
 	
 End-->
