@@ -1,6 +1,6 @@
 # BSAndReduce
 
-#This program is just a demonstration
+#This program is just a demonstration of few OpenCV algorithms.
 
 Pseudo Code:
 
